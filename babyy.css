@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 3.5vw;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+nav a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Home Section */
+section {
+    padding: 10rem 9%;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    background-color: black;
+}
+
+.home-content h1 {
+    font-size: calc(3vw + 2rem);
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 3vw;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home-img img {
+    width: 35vw;
+    border-radius: 50%;
+    transition: 0.3s;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height: 4vw;
+    font-size: 2rem;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: black;
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+    transform: scale(1.2);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text {
+    font-size: 3.5vw;
+    font-weight: 600;
+    min-width: 200px;
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 5rem 9%;
+    background-color: #161616;
+}
+
+#gallery h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 25vw;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* About Section */
+#about {
+    padding: 5rem 9%;
+    background-color: black;
+}
+
+#about h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#about p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Contact Section */
+#contact {
+    padding: 5rem 9%;
+    background-color: #161616;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+#contact p {
+    font-size: 1.5rem;
+    color: white;
+}
+/* Bagian styling lainnya yang sudah ada */
+
+/* Video Section */
+/* Video Section */
+#video {
+    padding: 5rem 9%;
+    background-color: #161616;
+    text-align: center;
+}
+
+#video h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.video-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: auto; /* Lebar otomatis */
+    height: 50vh; /* Sesuaikan tinggi dengan viewport */
+    max-height: 300px; /* Membatasi tinggi video */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.video-container video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 5rem 9%;
+    background-color: #161616;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-images img {
+    width: 100%; /* Buat gambar responsif agar sesuai kolom */
+    height: auto; /* Sesuaikan tinggi secara otomatis */
+    border-radius: 10px; /* Tambahkan border-radius agar tampilan lebih menarik */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Tambahkan bayangan */
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0 0 20px rgba(183, 75, 75, 0.5);
+}
+.typing-text .changing-words {
+    position: relative;
+    font-weight: bold;
+    color: #b74b4b;
+}
+
+.typing-text .changing-words::before {
+    content: "Beautiful"; /* Kata pertama yang muncul */
+    animation: words 10s infinite; /* Atur durasi dan pengulangan */
+}
+
+@keyframes words {
+    0%, 20% {
+        content: "Beautiful";
+    }
+    21%, 40% {
+        content: "Cute";
+    }
+    41%, 60% {
+        content: "Romantic";
+    }
+    61%, 80% {
+        content: "Sweet";
+    }
+    81%, 100% {
+        content: "Excited";
+    }
+}
